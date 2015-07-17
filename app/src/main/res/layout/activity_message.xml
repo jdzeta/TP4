@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ecolem_test.tp3.MessageActivity">
+
+    <TextView android:text="@string/act_message_title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/act_message_title"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/act_message_new"
+        android:layout_below="@+id/act_message_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/act_new_group_emails_guest"
+        android:layout_alignRight="@+id/messagesListView"
+        android:layout_alignEnd="@+id/messagesListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/act_message_button"
+        android:id="@+id/act_message_button"
+        android:layout_below="@+id/act_message_new"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sendMessage" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messagesListView"
+        android:layout_below="@+id/act_message_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="1dp"
+        android:divider="#dddddd"/>
+
+</RelativeLayout>
