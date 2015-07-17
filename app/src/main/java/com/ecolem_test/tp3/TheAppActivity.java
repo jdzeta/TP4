@@ -36,6 +36,8 @@ public class TheAppActivity extends AppActivity {
     ListView mListView;
     private String user_token;
 
+    MySingleton mySingleton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
